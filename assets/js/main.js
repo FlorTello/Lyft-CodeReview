@@ -55,8 +55,8 @@ inputs[2].addEventListener('blur',validarEmail);
 
 function validarEmail(){
 	var correcto = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; // "w" permite números y letras, admite punto(.) y guión(-), entre las palabras, es opcional(?). el * permite revisar cero o mas veces
-	var email = inputs[2].value;
-	if(!correcto.test(email)){
+	//var email = inputs[2].value;//
+	if(!correcto.test(this.value)){
 		alert("no es un correo válido");
 	}
 	else{

@@ -50,15 +50,24 @@ var inputs = document.getElementsByClassName('input-form-number');
 for (var i = 0; i < inputs.length; i++) {
 	inputs[i].addEventListener('blur',validarVacio);
 }
-
 inputs[1].addEventListener('blur',validarNombre);
-var correcto = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(s\.\w{2,3})+$/; // "w" permite números y letras, admite punto(.) y guión(-), entre las palabras, es opcional(?). el * permite revisar cero o mas veces
+inputs[2].addEventListener('blur',validarEmail);
+inputs[3].addEventListener('blur',validarNombre);
+
 
 function validarEmail(){
-	if(!correcto.test(this.value)){
+	var correcto = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; // "w" permite números y letras, admite punto(.) y guión(-), entre las palabras, es opcional(?). el * permite revisar cero o mas veces
+	var email = inputs[2].value;
+	if(!correcto.test(email)){
 		this.nextElementSibling.style.display = "block";
-		return false;
+		this.classList.add('input-invalido');
+    	return false;
 	}
+	else{
+		this.classList.remove('input-invalido');
+		return true;
+	}
+
 }
 function validarVacio(){
 	if(this.value.trim() === ""){
@@ -77,10 +86,8 @@ function validarNombre(){
 			this.classList.remove('input-invalido');
   }
   else{
-    this.focus();
 		this.classList.add('input-invalido');
 		this.nextElementSibling.style.display = "block";
-
   }
 }
 function validarTodo() {

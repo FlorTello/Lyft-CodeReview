@@ -41,3 +41,19 @@ var input = document.getElementsByClassName('input-form-number');
 for (var i = 0; i < input.length; i++) {
 	input[i]
 }
+
+
+//-------------Validación de Email (Nadia) ------------//
+
+
+var email = document.getElementById("email");
+email.addEventListener('blur',validarEmail);
+var correcto = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(s\.\w{2,3})+$/; // "w" permite números y letras, admite punto(.) y guión(-), entre las palabras, es opcional(?). el * permite revisar cero o mas veces
+
+function validarEmail(email){
+	if(!correcto.test(email)){
+		alert("no es un correo válido");
+    
+	}
+}
+

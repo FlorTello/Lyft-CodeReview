@@ -64,11 +64,14 @@ body{
 	background-color: rgba(250,250,250,0);
 }
 #sign-up{
-	opacity: 0;
 	border-color: #FF00bf;
 	position: absolute;
-	right: 0;
+	right: -186px;
 	top: 40px;
+	transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
 }
 #sign-up a{
 	color: #FF00bf;
@@ -118,7 +121,7 @@ body{
 }
 .input-form{
 	margin: 20px 0;
-	position: relative;	
+	position: relative;
 }
 .input-form-general{
 	padding: 5px 0;
@@ -134,7 +137,7 @@ body{
 	border-radius: 7px;
 	padding: 15px 20px;
 	font-size: 18px;
-	margin-bottom: 10px; 
+	margin-bottom: 10px;
 }
 .signup-form{
 	color: #728099;
@@ -172,7 +175,7 @@ body{
 #text-container-information{
 	color:white;
 	position: relative;
-	left: 200px;	
+	left: 200px;
 }
 .title-information{
 	margin: 0;

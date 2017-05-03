@@ -11,7 +11,7 @@ window.addEventListener('scroll',function(){
 	if (accionScroll > ultimoScrollTop) {
 		navHeader.classList.add('bg-header');
 		logoHeader.setAttribute('src','assets/img/logo-pink.png');
-		signup.style.opacity = 1;
+			signup.style.transform = "translate(-200px, 0px)";
 		for (var i = 0; i < menuList.length; i++) {
 			menuList[i].classList.add('scroll-header-color');
 			logIn.classList.add('scroll-header-border');
@@ -20,7 +20,8 @@ window.addEventListener('scroll',function(){
 	else if (accionScroll <= 3) {
 		navHeader.classList.remove('bg-header');
 		logoHeader.setAttribute('src','assets/img/logo-white.png');
-		signup.style.opacity = 0;
+		signup.style.transform = "translate(0px, 0px)";
+
 		for (var i = 0; i < menuList.length; i++) {
 			menuList[i].classList.remove('scroll-header-color');
 		}

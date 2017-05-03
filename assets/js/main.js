@@ -28,7 +28,7 @@ window.addEventListener('scroll',function(){
 	ultimoScrollTop = accionScroll;
 },false);
 
-var datoOculto = document.getElementsByClassName('dato-oculto');
+var datoOculto = document.getElementsByClassName('input-form-general');
 var phoneNumber = document.getElementById('phone-number');
 phoneNumber.addEventListener('mousedown',function (e) {
 	for (var i = 0; i < datoOculto.length; i++) {

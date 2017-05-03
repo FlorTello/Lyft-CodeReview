@@ -43,11 +43,13 @@ for (var i = 0; i < input.length; i++) {
 }
 
 
+
 //-------------Validación de Email (Nadia) ------------//
 
+var inputs = document.getElementsByClassName('input-invalido');
+inputs[0].addEventListener('blur',validarNombre);
 
-var email = document.getElementById("email");
-email.addEventListener('blur',validarEmail);
+inputs[2].addEventListener('blur',validarEmail);
 var correcto = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(s\.\w{2,3})+$/; // "w" permite números y letras, admite punto(.) y guión(-), entre las palabras, es opcional(?). el * permite revisar cero o mas veces
 
 function validarEmail(email){
@@ -57,3 +59,8 @@ function validarEmail(email){
 	}
 }
 
+function validarVacio(){
+	if(this.value.trim() === ""){
+		this.nextElementSibling.style.display = "block";
+	}
+}

@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="assets/fonts/style.css">
 </head>
 <body>
-	<header>		
+	<header>
 		<nav id="nav-header">
 			<img id='logo-header' src="assets/img/logo-white.png" alt="logo">
 			<ul>
@@ -34,19 +34,22 @@
 		<h4 class="subtitle-form">SIGN UP TO DRIVE WITH LYFT.</h4>
 		<form action="">
 			<div class="input-form">
-				<input id="phone-number" type="text" class="input-form-general input-invalido" placeholder='Phone Number'>
+				<input id="phone-number" type="text" class="input-form-general " placeholder='Phone Number'>
 				<img class='error' src="assets/img/error.png" alt="">
 			</div>
 			<div class="input-form dato-oculto">
-				<input id="name" type="text" class="input-form-general" placeholder='Name'>
+				<input id="name" type="text" class="input-form-general " placeholder='Name'>
+				<img class='error' src="assets/img/error.png" alt="">
 			</div>
 			<div class="input-form dato-oculto">
-				<input id="text" type="text" class="input-form-general" placeholder='Email'>
+				<input id="email" type="text" class="input-form-general " placeholder='Email'>
+				<img class='error' src="assets/img/error.png" alt="">
 			</div>
 			<div class="input-form dato-oculto">
-				<input id="City" type="text" class="input-form-general" placeholder='City'>
+				<input id="City" type="text" class="input-form-general " placeholder='City'>
+				<img class='error' src="assets/img/error.png" alt="">
 			</div>
-			<button class="submit-form">Become a driver</button>
+			<button class="submit-form" id = "submit">Become a driver</button>
 			<a class='signup-form' href="">Sign Up to Ride</a>
 		</form>
 		<p class="text-form">Already applied? Check the status of your application here</p>
@@ -55,7 +58,7 @@
 
 	<section id="informacion">
 		<div  id="container">
-			<div id="text-container-information">				
+			<div id="text-container-information">
 				<h1 class="title-information">A RIDE IN MINUTES</h1>
 				<p>Request a ride and you'll be on your way in minutes<br>Request. Ride. Repeat.</p>
 				<h1 class="title-information">SERIOUS ABOUT SAFETY</h1>

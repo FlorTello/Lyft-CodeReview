@@ -41,3 +41,12 @@ var input = document.getElementsByClassName('input-form-number');
 for (var i = 0; i < input.length; i++) {
 	input[i]
 }
+var inputs = document.getElementsByClassName('input-invalido');
+inputs[0].addEventListener('blur',validarNombre);
+
+function validarNombre(){
+	if(this.value.trim() === ""){
+		// alert('nombre vacio');
+		this.nextElementSibling.style.display = "block";
+	}
+}

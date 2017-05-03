@@ -117,8 +117,8 @@ video {
 }
 .input-form{
 	margin: 20px 0;
-	position: relative;	
-	
+	position: relative;
+
 }
 .input-form-number{
 	padding: 5px 0;
@@ -134,7 +134,7 @@ video {
 	border-radius: 7px;
 	padding: 15px 20px;
 	font-size: 18px;
-	margin-bottom: 10px; 
+	margin-bottom: 10px;
 }
 .signup-form{
 	color: #728099;
@@ -155,8 +155,8 @@ video {
 	right: 0;
 	top: 0;
 	width: 25px;
+	display: none;
 }
-
 .ocultar-placeholder{
 	display: none;
 }
@@ -175,7 +175,7 @@ video {
 #text-container-information{
 	color:white;
 	position: relative;
-	left: 200px;	
+	left: 200px;
 }
 .title-information{
 	margin: 0;

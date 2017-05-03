@@ -36,8 +36,15 @@ phoneNumber.addEventListener('mousedown',function (e) {
 	}
 })
 
-var input = document.getElementsByClassName('input-form-number');
+var input = document.getElementsByClassName('input-form-general');
+var validarNumero = /^[0-9]{9}$/;
 
-for (var i = 0; i < input.length; i++) {
-	input[i]
+phoneNumber.addEventListener('blur', validarNumber);
+
+function validarNumber(){
+	if (!validarNumero.test(phoneNumber.value)) {
+		alert("Numero no valido");
+	} else {
+		console.log("es valido");
+	}
 }

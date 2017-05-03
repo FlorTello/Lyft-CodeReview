@@ -1,0 +1,292 @@
+*{
+	font-family: 'Montserrat', sans-serif;
+}
+body{
+	margin:0;
+}
+#video-principal{
+	background-color: #76278f;
+	width: 100%;
+	height: 700px;
+}
+video {
+	margin: 0;
+	width: 100%;
+	z-index: 0;
+	transform: translateY(-12%);
+}
+#transicion-color{
+	height: 100px;
+	width: 100%;
+	background: linear-gradient(transparent,#76278f);
+	position: absolute;
+	bottom: 0;
+}
+
+/*HEADER*/
+#nav-header{
+	height: 110px;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	transition: all 0.3s cubic-bezier(0.7, 0.01, 0.3, 1);
+}
+#logo-header{
+	width: 65px;
+	position: absolute;
+	left: 80px;
+	top: 40px;
+}
+#nav-header ul{
+	position: relative;
+	margin: 0;
+	float: right;
+	top: 40px;
+	right: 140px;
+}
+.menu-list{
+	margin: 0 20px;
+	display: inline-block;
+}
+.menu-list-a{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	font-weight: 300;
+}
+.log-in,
+#sign-up{
+	border:1px solid white;
+	padding: 10px 15px;
+	border-radius: 8px;
+	background-color: rgba(250,250,250,0);
+}
+#sign-up{
+	opacity: 0;
+	border-color: #FF00bf;
+	position: absolute;
+	right: 0;
+	top: 40px;
+}
+#sign-up a{
+	color: #FF00bf;
+}
+.menu-list:hover a{
+	color: #FF00bf;
+}
+.log-in:hover{
+	background-color: rgba(250,250,250,0.5);
+}
+.log-in:hover a{
+	color: white;
+}
+
+.bg-header{
+	background-color: rgba(250,250,250,1);
+}
+.scroll-header-color{
+	color: #333447;
+}
+.scroll-header-border{
+	border-color: #333447;
+}
+
+/*FORMULARIO*/
+#formulario{
+	width: 530px;
+	height: auto;
+	position: absolute;
+	right: 0;
+	background-color: white;
+	top: 120px;
+	padding: 50px 70px;
+	box-sizing: border-box;
+}
+.title-form{
+	margin: 0;
+	color: #352384;
+	font-size: 45px;
+	font-weight: 500;
+}
+.subtitle-form{
+	margin: 0;
+	color: #352384;
+	font-weight: 300;
+	letter-spacing: 2px;
+	font-size: 15px;
+}
+.input-form{
+	margin: 20px 0;
+	position: relative;	
+	
+}
+.input-form-number{
+	padding: 5px 0;
+	border: solid #352384;
+	border-width: 0 0 1px 0;
+	width: 100%;
+	outline: none;
+}
+.submit-form{
+	color: white;
+	border:none;
+	background-color: #FF00bf;
+	border-radius: 7px;
+	padding: 15px 20px;
+	font-size: 18px;
+	margin-bottom: 10px; 
+}
+.signup-form{
+	color: #728099;
+	margin-left: 20px;
+	font-weight: 300;
+}
+.text-form{
+	color: #728099;
+	font-size: 10px;
+}
+
+.input-invalido{
+	border: solid red;
+	border-width: 0 0 1px 0;
+}
+.error{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 25px;
+}
+
+.ocultar-placeholder{
+	display: none;
+}
+
+/*INFORMACION*/
+#informacion{
+	position: relative;
+	overflow: hidden;
+
+}
+#container{
+	background: linear-gradient(#76278f,#2b1e66);
+	width: 100%;
+	height: 500px;
+}
+#text-container-information{
+	color:white;
+	position: relative;
+	left: 200px;	
+}
+.title-information{
+	margin: 0;
+	font-weight: 400;
+	font-size: 30px;
+}
+#text-container-information p{
+	font-size: 14px;
+	font-weight: 300;
+	margin-bottom: 50px;
+}
+.phone-information{
+	width: 470px;
+	position: absolute;
+	top: 0;
+	right: 120px;
+}
+/*Container Videos*/
+#container-videos{
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+.video-box{
+	width: 100%;
+	height: 500px;
+	line-height: 0;
+	position: relative;
+	display: block;
+}
+.videos-youtube{
+	width: 850px;
+	height: 500px;
+}
+.one-video,
+.three-video{
+	position: absolute;
+	right: 0;
+}
+.text-video{
+	width: 350px;
+	position: absolute;
+	line-height: 20px;
+	left: 50px;
+	top: 30px;
+}
+.two-video{
+	left: auto;
+	right: 50px;
+}
+
+/*Footer*/
+#footer{
+	width: 100%;
+	height: 500px;
+	background-color: #333447;
+}
+
+#footer ul{
+	display: inline-block;
+	margin: 40px;
+	color: white;
+}
+#footer li{
+	margin: 25px;
+	display: block;
+	font-weight: 300;
+}
+#footer li h2{
+	font-weight: 400;
+}
+.logo-app img{
+	width: 120px;
+}
+
+#redes-sociales{
+	margin: 0 auto;
+	width: 700px;
+	height: 100px;
+	text-align: center;
+}
+.redes-circle{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	color: white;
+	border: 1px solid white;
+	border-radius: 50%;
+	margin: 10px 30px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.redes-circle span{
+	font-size: 15px;
+}
+
+.copyright{
+	padding: 20px;
+	color: white;
+}
+
+.redes-circle:hover{
+	color:#FF00bf;
+	border-color: #FF00bf;
+	cursor: pointer
+}
+#footer ul li:hover{
+	color: #FF00bf;
+	cursor: pointer;
+}
+#footer ul h2:hover{
+	color: white;
+	cursor: text;
+}

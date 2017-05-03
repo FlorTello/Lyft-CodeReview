@@ -46,7 +46,7 @@ for (var i = 0; i < input.length; i++) {
 
 //-------------Validación de Email (Nadia) ------------//
 
-var inputs = document.getElementsByClassName('input-form-number');
+var inputs = document.getElementsByClassName('input-form-general');
 for (var i = 0; i < inputs.length; i++) {
 	inputs[i].addEventListener('blur',validarVacio);
 }

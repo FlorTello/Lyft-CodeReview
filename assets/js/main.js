@@ -44,9 +44,8 @@ for (var i = 0; i < input.length; i++) {
 var inputs = document.getElementsByClassName('input-invalido');
 inputs[0].addEventListener('blur',validarNombre);
 
-function validarNombre(){
+function validarVacio(){
 	if(this.value.trim() === ""){
-		// alert('nombre vacio');
 		this.nextElementSibling.style.display = "block";
 	}
 }

@@ -46,21 +46,32 @@ for (var i = 0; i < input.length; i++) {
 
 //-------------Validación de Email (Nadia) ------------//
 
-var inputs = document.getElementsByClassName('input-invalido');
-inputs[0].addEventListener('blur',validarNombre);
+var inputs = document.getElementsByClassName('input-form-number');
+for (var i = 0; i < inputs.length; i++) {
+	inputs[i].addEventListener('blur',validarVacio);
+}
 
 inputs[2].addEventListener('blur',validarEmail);
 var correcto = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(s\.\w{2,3})+$/; // "w" permite números y letras, admite punto(.) y guión(-), entre las palabras, es opcional(?). el * permite revisar cero o mas veces
 
-function validarEmail(email){
-	if(!correcto.test(email)){
-		alert("no es un correo válido");
-    
+function validarEmail(){
+	if(!correcto.test(this.value)){
+		this.nextElementSibling.style.display = "block";
+		return false;
 	}
 }
-
 function validarVacio(){
 	if(this.value.trim() === ""){
 		this.nextElementSibling.style.display = "block";
+		console.log(this);
+		this.classList.add('input-invalido');
+		return false;
 	}
 }
+function validarTodo() {
+	if(validarVacio(inputs[0]) == false){
+		alert('llena todos los datos');
+	}
+}
+
+document.getElementById('submit').addEventListener('submit',validarTodo);

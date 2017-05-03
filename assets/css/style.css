@@ -267,6 +267,10 @@ video {
 	margin: 10px 30px;
 	padding: 5px;
 	box-sizing: border-box;
+	transition: width 1.5s, height 1.5s, transform 1.5s;
+    -moz-transition: width 1.5s, height 1.5s, -moz-transform 1.5s;
+    -webkit-transition: width 1.5s, height 1.5s, -webkit-transform 1.5s;
+    -o-transition: width 1.5s, height 1.5s,-o-transform 1.5s;
 }
 .redes-circle span{
 	font-size: 15px;
@@ -280,7 +284,11 @@ video {
 .redes-circle:hover{
 	color:#FF00bf;
 	border-color: #FF00bf;
-	cursor: pointer
+	cursor: pointer;
+    transform : scale(1.3);
+	-moz-transform : scale(1.3);   
+	-webkit-transform : scale(1.3);
+	-o-transform : scale(1.3);
 }
 #footer ul li:hover{
 	color: #FF00bf;

@@ -1,3 +1,4 @@
+//SCROLL
 var ultimoScrollTop = 0;
 window.addEventListener('scroll',function(){
 	var navHeader = document.getElementById('nav-header');
@@ -28,16 +29,17 @@ window.addEventListener('scroll',function(){
 	ultimoScrollTop = accionScroll;
 },false);
 
-var datoOculto = document.getElementsByClassName('dato-oculto');
+//MOSTRAR FORMULARIO COMPLETO
+var inputForm = document.getElementsByClassName('input-form');
 var phoneNumber = document.getElementById('phone-number');
 phoneNumber.addEventListener('mousedown',function (e) {
-	for (var i = 0; i < datoOculto.length; i++) {
-		datoOculto[i].classList.remove('ocultar-placeholder');
+	for (var i = 1; i < inputForm.length; i++) {
+		inputForm[i].classList.remove('dato-oculto');
 	}
-})
+});
 
-var input = document.getElementsByClassName('input-form-number');
-
-for (var i = 0; i < input.length; i++) {
-	input[i]
-}
+// VALIDACIONES
+//NUMBER
+//NAME
+//EMAIL
+//CITY

@@ -49,7 +49,6 @@ function validarEmail(){
 function validarVacio(){
 	if(this.value.trim() === ""){
 		this.nextElementSibling.style.display = "block";
-		console.log(this);
 		this.classList.add('input-invalido');
 		return false;
 	}
@@ -66,10 +65,15 @@ for (var i = 0; i < inputs.length; i++) {
 	inputs[i].addEventListener('blur',validarVacio);
 }
 //NUMBER
+var validarNumero = /^[0-9]{9}$/;
+phoneNumber.addEventListener('blur', validarNumber);
+function validarNumber(){
+	if (!validarNumero.test(phoneNumber.value)) {
+		console.log('mal');
+	}
+}
 //NAME
 //EMAIL
-inputs[2].addEventListener('blur',validarEmail);
-var correcto = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(s\.\w{2,3})+$/; // "w" permite números y letras, admite punto(.) y guión(-), entre las palabras, es opcional(?). el * permite revisar cero o mas veces
-document.getElementById('submit').addEventListener('submit',validarTodo);
-
+// var correcto = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(s\.\w{2,3})+$/; // "w" permite números y letras, admite punto(.) y guión(-), entre las palabras, es opcional(?). el * permite revisar cero o mas veces
+// document.getElementById('submit').addEventListener('submit',validarTodo);
 //CITY

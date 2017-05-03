@@ -69,9 +69,6 @@ body{
 	right: -186px;
 	top: 40px;
 	transition: all .5s ease-in-out;
-	-webkit-transition: all .5s ease-in-out;
-	-moz-transition: all .5s ease-in-out;
-	-ms-transition: all .5s ease-in-out;
 }
 #sign-up a{
 	color: #FF00bf;

@@ -40,21 +40,6 @@ phoneNumber.addEventListener('mousedown',function (e) {
 });
 
 // VALIDACIONES
-//NUMBER
-//NAME
-//EMAIL
-//CITY
-
-//-------------Validación de Email (Nadia) ------------//
-
-var inputs = document.getElementsByClassName('input-form-general');
-for (var i = 0; i < inputs.length; i++) {
-	inputs[i].addEventListener('blur',validarVacio);
-}
-
-inputs[2].addEventListener('blur',validarEmail);
-var correcto = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(s\.\w{2,3})+$/; // "w" permite números y letras, admite punto(.) y guión(-), entre las palabras, es opcional(?). el * permite revisar cero o mas veces
-
 function validarEmail(){
 	if(!correcto.test(this.value)){
 		this.nextElementSibling.style.display = "block";
@@ -75,5 +60,17 @@ function validarTodo() {
 	}
 }
 
+//INPUTS VACIOS
+var inputs = document.getElementsByClassName('input-form-general');
+for (var i = 0; i < inputs.length; i++) {
+	inputs[i].addEventListener('blur',validarVacio);
+}
+//NUMBER
+//NAME
+//EMAIL
+inputs[2].addEventListener('blur',validarEmail);
+var correcto = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(s\.\w{2,3})+$/; // "w" permite números y letras, admite punto(.) y guión(-), entre las palabras, es opcional(?). el * permite revisar cero o mas veces
 document.getElementById('submit').addEventListener('submit',validarTodo);
+
+//CITY
 

@@ -283,4 +283,5 @@ body{
 #footer ul h2:hover{
 	color: white;
 	cursor: text;
+	text-decoration: underline;
 }

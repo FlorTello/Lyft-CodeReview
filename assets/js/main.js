@@ -73,4 +73,3 @@ var correcto = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(s\.\w{2,3})+$/; // "w" permite 
 document.getElementById('submit').addEventListener('submit',validarTodo);
 
 //CITY
-

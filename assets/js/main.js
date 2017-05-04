@@ -28,7 +28,7 @@ window.addEventListener('scroll',function(){
 	ultimoScrollTop = accionScroll;
 },false);
 
-var datoOculto = document.getElementsByClassName('input-form-general');
+var datoOculto = document.getElementsByClassName('dato-oculto');
 var phoneNumber = document.getElementById('phone-number');
 phoneNumber.addEventListener('mousedown',function (e) {
 	for (var i = 0; i < datoOculto.length; i++) {
@@ -46,7 +46,7 @@ for (var i = 0; i < input.length; i++) {
 
 //-------------Validación de Email (Nadia) ------------//
 
-var inputs = document.getElementsByClassName('input-form-general');
+var inputs = document.getElementsByClassName('input-form-number');
 for (var i = 0; i < inputs.length; i++) {
 	inputs[i].addEventListener('blur',validarVacio);
 }
